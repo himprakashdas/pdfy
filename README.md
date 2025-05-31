@@ -10,7 +10,7 @@ A modern, fast, and feature-rich CLI tool for converting Markdown files to beaut
 
 - 🚀 **Lightning-fast conversion** using Chrome headless engine
 - 📝 **GitHub Flavored Markdown** support with tables, task lists, and more
-- 🎨 **Professional themes** (light, dark) with customizable CSS
+- 🎨 **Professional themes** with customizable CSS
 - 🌈 **Syntax highlighting** for 100+ programming languages
 - 📋 **YAML front matter** for document metadata and configuration
 - 📚 **Table of Contents** generation with `<!-- TOC -->` placeholder
@@ -55,8 +55,8 @@ pdfy convert README.md
 # Specify output location
 pdfy convert docs/guide.md --output guides/guide.pdf
 
-# Use dark theme
-pdfy convert document.md --theme dark
+# Use with custom CSS
+pdfy convert document.md --css custom.css
 ```
 
 ## 📖 Comprehensive Guide
@@ -69,9 +69,6 @@ pdfy convert document.md
 
 # With custom output path
 pdfy convert document.md -o /path/to/output.pdf
-
-# Using different theme
-pdfy convert document.md --theme dark
 
 # With custom CSS
 pdfy convert document.md --css custom-styles.css
@@ -102,9 +99,6 @@ pdfy watch .
 
 # Watch specific directory with output folder
 pdfy watch docs/ --output-dir build/pdfs/
-
-# Watch with specific theme
-pdfy watch . --theme dark
 ```
 
 ### YAML Front Matter
@@ -114,7 +108,6 @@ Enhance your documents with metadata:
 ```yaml
 ---
 title: "Project Documentation"
-theme: dark
 css: custom.css
 ---
 # Your Markdown Content
@@ -145,7 +138,6 @@ Content here...
 ### Built-in Themes
 
 - **light** (default) - Clean, professional appearance
-- **dark** - Dark mode with syntax highlighting
 
 ### Custom CSS
 
@@ -188,6 +180,8 @@ curl -H "Authorization: Bearer TOKEN" https://api.example.com
 ```
 ````
 
+```
+
 ## Endpoints
 
 | Method | Endpoint | Description |
@@ -195,14 +189,14 @@ curl -H "Authorization: Bearer TOKEN" https://api.example.com
 | GET    | /users   | List users  |
 | POST   | /users   | Create user |
 
-````
+```
 
 ### Book/Report Generation
 
 ```bash
 # Batch convert book chapters
 pdfy batch "chapter-*.md" --output-dir book/
-````
+```
 
 ## 🛠️ Advanced Configuration
 
@@ -228,7 +222,6 @@ Create your own HTML templates in `internal/converter/templates/`:
 ### Environment Variables
 
 ```bash
-export PDFY_THEME=dark
 export PDFY_OUTPUT_DIR=./pdfs
 ```
 
@@ -306,3 +299,21 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Made with ❤️ in Go** | **Star ⭐ if you found this helpful!**
+
+## 📁 Examples
+
+Check out the `examples/` directory for sample Markdown files that demonstrate various Pdfy features:
+
+```bash
+# Convert the comprehensive example
+pdfy convert examples/example.md
+
+# Convert the simple example
+pdfy convert examples/simple.md
+```
+
+See `examples/README.md` for more details about available examples.
+
+```
+
+```

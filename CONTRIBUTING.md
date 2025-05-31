@@ -41,7 +41,7 @@ Thank you for your interest in contributing to Pdfy! We welcome contributions fr
 5. **Build and test**:
    ```bash
    go build -o pdfy
-   ./pdfy convert resources/source_markdown.MD
+   ./pdfy convert examples/example.md
    ```
 
 ## 🛠️ Development Setup
@@ -62,9 +62,8 @@ pdfy/
 │   ├── templates/         # HTML templates
 │   │   └── default.html   # Default template
 │   └── themes/            # CSS themes
-│       ├── light.css      # Light theme
-│       └── dark.css       # Dark theme
-├── resources/             # Sample markdown files
+│       └── light.css      # Light theme
+├── examples/              # Example markdown files
 ├── go.mod                 # Go module definition
 ├── go.sum                 # Go module checksums
 ├── main.go               # Application entry point
@@ -219,7 +218,7 @@ Types:
 Examples:
 
 ```bash
-git commit -m "feat(converter): add dark theme support"
+git commit -m "feat(converter): add custom CSS support"
 git commit -m "fix(cli): resolve batch processing crash on Windows"
 git commit -m "docs(readme): update installation instructions"
 ```
@@ -347,9 +346,9 @@ testdata/
 
 ```bash
 # Test different scenarios
-./pdfy convert testdata/basic.md -o test-output/basic.pdf
-./pdfy batch "testdata/*.md" --output-dir test-output/
-./pdfy convert testdata/complex.md --theme dark
+./pdfy convert examples/simple.md -o test-output/simple.pdf
+./pdfy batch "examples/*.md" --output-dir test-output/
+./pdfy convert examples/example.md --css custom.css
 ```
 
 ## 📖 Documentation
@@ -373,7 +372,7 @@ testdata/
 //
 // Parameters:
 //   - config: Configuration for the conversion process
-//   - theme: Theme name (light, dark, or custom path)
+//   - theme: Theme name (light or custom path)
 //
 // Returns the generated PDF content and any error encountered.
 //

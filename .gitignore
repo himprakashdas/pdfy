@@ -1,0 +1,86 @@
+# Build artifacts
+pdfy
+pdfy.exe
+pdfy-*
+*.exe
+dist/
+build/
+
+# Test files and outputs
+test*.pdf
+test*.html
+test*.md
+example*.pdf
+example*.html
+*-test.pdf
+*-test.html
+*-test.md
+temp*.pdf
+temp*.html
+temp*.md
+output*.pdf
+output*.html
+
+# Test directories
+test-output/
+testdata/
+tests/
+temp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vim/
+
+# Go files
+*.prof
+*.test
+*.out
+coverage.out
+coverage.html
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local environment files
+.env
+.env.local
+
+# Documentation builds
+docs/_build/
+site/
+
+# Backup files
+*.bak
+*.backup
+
+# IDE specific
+.vs/
+
+# Node modules (if any JS tools are added)
+node_modules/
+
+# Python files (if any Python tools are added)
+__pycache__/
+*.pyc
+*.pyo
+
+# Any output PDFs not in examples
+/*.pdf
+/*.html 

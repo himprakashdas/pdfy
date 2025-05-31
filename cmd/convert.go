@@ -26,16 +26,16 @@ var convertCmd = &cobra.Command{
 Examples:
   pdfy convert document.md -o output.pdf
   pdfy convert document.md --template technical
-  pdfy convert document.md --css custom.css --theme dark`,
+  pdfy convert document.md --css custom.css`,
 	Args: cobra.ExactArgs(1),
 	RunE: convertFile,
 }
 
 func init() {
 	convertCmd.Flags().StringVarP(&outputPath, "output", "o", "", "Output PDF file path")
-	convertCmd.Flags().StringVarP(&templateName, "template", "t", "default", "Template to use (default, technical, dark)")
 	convertCmd.Flags().StringVar(&cssPath, "css", "", "Custom CSS file path")
-	convertCmd.Flags().StringVar(&theme, "theme", "light", "Theme to use (light, dark)")
+	convertCmd.Flags().StringVarP(&templateName, "template", "t", "default", "Template to use (default, technical)")
+	convertCmd.Flags().StringVar(&theme, "theme", "light", "Theme to use (light)")
 }
 
 func convertFile(cmd *cobra.Command, args []string) error {
