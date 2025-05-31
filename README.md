@@ -2,7 +2,7 @@
 
 [![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)](https://golang.org)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)](https://github.com/yourusername/pdfy)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)](https://github.com/himprakashdas/pdfy)
 
 A modern, fast, and feature-rich CLI tool for converting Markdown files to beautifully formatted PDFs. Built with Go and powered by Chrome's headless PDF engine for professional-quality output.
 
@@ -27,7 +27,7 @@ A modern, fast, and feature-rich CLI tool for converting Markdown files to beaut
 
 ```bash
 # Download the latest release for your platform
-curl -L https://github.com/yourusername/pdfy/releases/latest/download/pdfy-linux-amd64 -o pdfy
+curl -L https://github.com/himprakashdas/pdfy/releases/latest/download/pdfy-linux-amd64 -o pdfy
 chmod +x pdfy
 sudo mv pdfy /usr/local/bin/
 ```
@@ -35,7 +35,7 @@ sudo mv pdfy /usr/local/bin/
 **Option 2: Build from Source**
 
 ```bash
-git clone https://github.com/yourusername/pdfy.git
+git clone https://github.com/himprakashdas/pdfy.git
 cd pdfy
 go build -o pdfy
 ```
@@ -43,7 +43,7 @@ go build -o pdfy
 **Option 3: Go Install**
 
 ```bash
-go install github.com/yourusername/pdfy@latest
+go install github.com/himprakashdas/pdfy@latest
 ```
 
 ### Basic Usage
@@ -292,9 +292,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📚 **Documentation**: [Wiki](https://github.com/yourusername/pdfy/wiki)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/pdfy/discussions)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/pdfy/issues)
+- 📚 **Documentation**: [Wiki](https://github.com/himprakashdas/pdfy/wiki)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/himprakashdas/pdfy/discussions)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/himprakashdas/pdfy/issues)
 
 ---
 
