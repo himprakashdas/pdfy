@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"pdfy/internal/converter"
+	"github.com/himprakashdas/pdfy/internal/converter"
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/cobra"

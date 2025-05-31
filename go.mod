@@ -1,4 +1,4 @@
-module pdfy
+module github.com/himprakashdas/pdfy
 
 go 1.21
 

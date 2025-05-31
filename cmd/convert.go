@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"pdfy/internal/converter"
+	"github.com/himprakashdas/pdfy/internal/converter"
 
 	"github.com/spf13/cobra"
 )

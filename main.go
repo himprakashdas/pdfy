@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"pdfy/cmd"
+	"github.com/himprakashdas/pdfy/cmd"
 )
 
 func main() {
